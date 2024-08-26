@@ -1,4 +1,7 @@
-const BASE_URL = 'http://localhost:8080/https://www.fruityvice.com/api/fruit';
+const BASE_URL = 'https://api.allorigins.win/raw?url=https://www.fruityvice.com/api/fruit';
+
+// URL для разработки
+// const BASE_URL = 'http://localhost:8080/https://www.fruityvice.com/api/fruit';
 
 export const getFruitsApi = () => {
   return fetch(`${BASE_URL}/all`)
@@ -13,4 +16,3 @@ export const getFruitsApi = () => {
       throw error;
     });
 };
-

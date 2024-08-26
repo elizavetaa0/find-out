@@ -13,7 +13,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <Router>
+      <Router basename="/find-out">
         <Routes>
           <Route path="/" element={<App />} />
           <Route path="/fruit/:id" element={<FruitDetails />} />
