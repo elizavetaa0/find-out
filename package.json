@@ -1,6 +1,7 @@
 {
   "name": "find-out",
   "version": "0.1.0",
+  "homepage": "https://elizavetaa0.github.io/find-out",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.7",
@@ -12,6 +13,7 @@
     "@types/react": "^18.3.4",
     "@types/react-dom": "^18.3.0",
     "cors-anywhere": "^0.4.4",
+    "gh-pages": "^6.1.1",
     "http-proxy-middleware": "^3.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -26,7 +28,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
